@@ -73,7 +73,7 @@ nav{
     width:50%;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     right: 0;
 
 }
@@ -262,6 +262,7 @@ nav a{
     --tw-gradient-stops: var(--tw-gradient-from), #240046;
     background-image: linear-gradient(to bottom,var(--tw-gradient-stops));   
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -290,6 +291,8 @@ nav a{
     height: 70%;
     transition: background-color 0.3s ease, transform 0.4s ease; 
 }
+
+
 
 .card h2{
     font-family: "Bauziet";
@@ -431,7 +434,7 @@ nav a{
     justify-content: c;
     color: white;
     font-family: "Gotham Medium";
-    font-size: larger;
+    font-size: x-large;
 }
 
 .res-card a{
@@ -508,7 +511,61 @@ footer h3{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding
-    border: ;
+}
+
+#rules{
+    height: 690px;
+}
+
+.rules{
+    margin-top: 10%;
+}
+
+.rules-card{
+    background-color: 240046;
+    border-radius: 50px;
+    width: 70%;
+    margin: auto;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: c;
+    color: white;
+    font-family: "Gotham Medium";
+    font-size: x-large;
+}
+
+/* Add a media query for screens smaller than 768px (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Change to a vertical layout on smaller screens */
+        height: auto; /* Remove fixed height to allow content to expand */
+    }
+
+    .logo {
+        padding-left: 0; /* Adjust logo padding for smaller screens */
+    }
+
+    nav {
+        width: 100%; /* Make the navigation bar take up the full width */
+        justify-content: flex-start; /* Adjust alignment of navigation items */
+        padding-top: 10px; /* Add spacing above navigation items */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Adjust padding for navigation items */
+    }
+
+    .prizes{
+        flex-direction: column;
+    }
+    .card{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+    }
+
 }
 
